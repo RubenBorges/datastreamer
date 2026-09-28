@@ -1,0 +1,12 @@
+<!-- markdownlint-disable MD041 -->
+CompileFlags:
+  Add:
+    - -Isrc/include
+    - -I/usr/include
+    - -I/usr/local/include
+    - -std=c++26
+---
+If:
+  PathExclude: [backends/.*]
+Diagnostics:
+  Suppress: "*"
